@@ -1,0 +1,9 @@
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+ollama --version
+ollama pull deepseek-r1:7b
+set OLLAMA_HOST=localhost:8000
+ollama serve
+
+streamlit run basics.py
